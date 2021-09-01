@@ -4,11 +4,11 @@ as part of ares pegasus 1.0 rover """
 
 import cv2 as cv 
 
-images = []
+images = []  # list to store images
 
-for i in range (0,2) :
+for i in range (0,2) :      # storing three images 
     read = cv.imread(f"panorama{i}.jpg")
-    images.append(read)
+    images.append(read)   
 
 panorama = cv.Stitcher_create()
-status , panorama_img = panorama.stitch(images)
+status , panorama_img = panorama.stitch(images) #panorama img is final image
