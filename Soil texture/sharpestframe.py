@@ -1,8 +1,7 @@
 import cv2 as cv
 import numpy as np
-import extcolors 
-from PIL import Image
 
+# calculating fourier transformatuion
 def fft(img) :
     grey = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     fft = np.fft.fftn(grey)
@@ -12,6 +11,7 @@ def fft(img) :
     rms = np.sqrt(np.mean(magnitude**2))
     return rms
 
+# finding the sharpestest image
 cap = cv.VideoCapture("haha4.mp4")
 length = int(cap.get(cv.CAP_PROP_FRAME_COUNT))
 res, img0 = cap.read()
