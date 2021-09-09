@@ -25,5 +25,7 @@ BMP 180 is pressure and temprature sensor based on piezo-resistive technology an
 | SDA | Serial Data pin (I2C interface) |
 | SCL | Serial Clock pin (I2C interface) |
 
+## BH1750
+
 
 
