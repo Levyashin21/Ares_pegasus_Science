@@ -1,4 +1,4 @@
-""" this code was hritten by harshit batra 
+""" this code was written by harshit batra 
 
 as part of ares pegasus 1.0 rover """
 
